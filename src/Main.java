@@ -54,8 +54,7 @@ public class Main {
             currentWord = sc.next();
             int firstLetter = (int) currentWord.charAt(0);
             if (currentWord.length() > 2) {
-                currentWord = firstLetter + String.valueOf(currentWord.charAt(currentWord.length() - 1))
-                        + currentWord.substring(2, currentWord.length() - 1) + String.valueOf(currentWord.charAt(1));
+                currentWord = firstLetter + String.valueOf(currentWord.charAt(currentWord.length() - 1)) + currentWord.substring(2, currentWord.length() - 1) + String.valueOf(currentWord.charAt(1));
             } else if (currentWord.length() == 2) {
                 currentWord = firstLetter + String.valueOf(currentWord.charAt(1));
             } else {
